@@ -7,6 +7,11 @@ dicaso software suite
 The dicaso software suite offers a graphical user interface to all bioinformatics components
 developed by Digital Caviar Solutions.
 
+- genairics: raw data analysis
+- bidali: advanced processing and biological inference
+- pyni: network inference package
+- leopard: lab reporting package
+
 ## Acknowledgments
 
 ### Open source projects
