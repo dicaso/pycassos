@@ -19,14 +19,14 @@ by looking at the `setup.py` files of the different dicaso components.
 
 #### Software engineers
 
-    - Christophe Van Neste, PhD (principal software engineer)
-    - pyni:
-      - Lieven Verbeke, PhD
+- Christophe Van Neste, PhD (principal software engineer)
+- pyni:
+  - Lieven Verbeke, PhD
 
 #### Funding agencies
 
-    - [Ghent University](https://www.ugent.be/)
-    - [FWO](http://www.fwo.be/)
+- [Ghent University](https://www.ugent.be/)
+- [FWO](http://www.fwo.be/)
 
 <img title="FWO logo" src="logos/ugent_logo_web.png" width="200">
 <img title="FWO logo" src="logos/fwo_logo_web.png" width="200">
