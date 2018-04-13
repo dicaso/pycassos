@@ -23,12 +23,27 @@ by looking at the `setup.py` files of the different dicaso components.
 - pyni:
   - Lieven Verbeke, PhD
 
+#### Beta testers
+
+- genairics:
+  - Bieke Decaesteker
+  - Jolien Dewyn
+- bidali:
+  - Jolien Dewyn
+  - Carolina Nunes
+- pyni:
+  - Carolina Nunes
+
 #### Funding agencies
 
 - [Ghent University](https://www.ugent.be/)
 - [FWO](http://www.fwo.be/)
 
-<img title="FWO logo" src="logos/ugent_logo_web.png" width="200">
-<img title="FWO logo" src="logos/fwo_logo_web.png" width="200">
+<table>
+<tr>
+<td><img title="FWO logo" src="logos/ugent_logo_web.png" width="200"></td>
+<td><img title="FWO logo" src="logos/fwo_logo_web.png" width="200"></td>
+</tr>
+</table>
 
 
