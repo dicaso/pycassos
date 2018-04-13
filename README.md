@@ -32,7 +32,7 @@ by looking at the `setup.py` files of the different dicaso components.
 
 - genairics:
   - Bieke Decaesteker
-  - Jolien Dewyn
+  - Jolien De Wyn
 - bidali:
   - Jolien Dewyn
   - Carolina Nunes
