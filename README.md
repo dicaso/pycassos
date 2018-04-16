@@ -1,5 +1,5 @@
 # PYthon CAviar Solutions SOftware Suite
-<img title="pycassos logo" src="logos/pycassos-text-logo.svg" width="250">
+<img title="pycassos logo" src="pycassong/src/assets/logos/pycassos-text-logo.svg" width="250">
 
 ## Components
 
