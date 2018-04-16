@@ -28,7 +28,7 @@ setup(name = package,
           'mpld3'
       ],
       extras_require = {
-          'development': ['Sphinx']
+          'development': ['twine','Sphinx']
       },
       package_data = {
       },
