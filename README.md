@@ -1,10 +1,10 @@
 <img title="dicaso suite logo" src="logos/dicaso-suite.svg" width="200">
 
-dicaso software suite
+PYthon CAviar Solutions SOftwaRe suite
 
 ## Components
 
-The dicaso software suite offers a graphical user interface to all bioinformatics components
+Pycassos offers a graphical user interface to all bioinformatics components
 developed by Digital Caviar Solutions.
 
 - genairics: raw data analysis
