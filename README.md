@@ -1,4 +1,4 @@
-<img title="dicaso suite logo" src="logos/pycassos-text-logo.svg" width="250">
+<img title="pycassos logo" src="logos/pycassos-text-logo.svg" width="250">
 
 PYthon CAviar Solutions SOftwaRe suite
 
