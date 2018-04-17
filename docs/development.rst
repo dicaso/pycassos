@@ -44,7 +44,7 @@ Original project setup
     npm install --save normalize.css bootstrap@4.0.0-alpha.6 font-awesome tether
     npm install --save @ng-bootstrap/ng-bootstrap
     ## components
-    for comp in nav home; do
+    for comp in nav home dosage; do
       ng g c $comp
       git add src/app/$comp
     done

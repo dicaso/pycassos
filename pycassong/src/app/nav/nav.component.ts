@@ -7,8 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
     scrollPosition: number;
+    navpages: any[];
     
-    constructor() { }
+    constructor() {
+	this.navpages = [
+	    ['Home','home'],
+	    ['Dosage sensitivity','dosage']
+	];
+
+    }
     
     ngOnInit() {
     }

@@ -1,4 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
 
+// Bootstrap sass variables
+$gray-base:             #411917;
+$brand-primary:         darken(#411917, 6.5%);
+$brand-success:         #d4cb6c;
+$brand-info:            #a15531;
+$brand-warning:         #b7150a;
+$brand-danger:          #fbcc74;
+
+// Imports
+@import "~normalize.css/normalize.css";
 @import "~bootstrap/scss/bootstrap.scss";
 @import "~font-awesome/css/font-awesome.css";
+
+// Custom scss
+// Custom variables
+$header-height:          70px;
+$footer-height:          70px;
+
+html {
+    position: relative; 
+    min-height: 100%;
+}
+
+.carousel {
+    height: 400px;
+    text-align: center;
+    outline: none;
+    
+    img {
+	margin: auto;
+    }
+}
+
+.router-content {
+    margin-top: $header-height;
+    margin-bottom: $footer-height;
+    padding-top: 1rem;
+}
+
+.footer,.header {
+    background-color: $brand-primary;
+    color: white;
+    .fullheight,table {
+	// use table to combine with .align-middle in header or footer
+	// all enclosing div's have to have .fullheight
+	height: 100%;
+    }
+}
+
+.header {
+    height: $header-height;
+}
+
+.footer {
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    height: $footer-height;
+}
