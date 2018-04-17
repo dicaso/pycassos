@@ -41,7 +41,7 @@ class NumpyEncoder(json.JSONEncoder):
         return json.JSONEncoder.default(self, obj)
 from mpld3 import _display
 _display.NumpyEncoder = NumpyEncoder
-#todo push to mpld3 repo
+#TODO push to mpld3 repo
 
 @app.route('/dosage/<gene>')
 def dosage(gene):
