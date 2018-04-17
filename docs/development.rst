@@ -39,7 +39,11 @@ Original project setup
       protractor.conf.js src tsconfig.json tslint.json .gitignore \
       .angular-cli.json .editorconfig
     sed -i '' 's+dist+../pycassos/static/song+' .angular-cli.json
-    ng build --prod
+    ## style
+    npm install --save normalize.css bootstrap@4.0.0-alpha.6 font-awesome tether
+    npm install --save @ng-bootstrap/ng-bootstrap
+    ## build
+    ng build --prod --build-optimizer --base-href=/static/song/
 
 
 References
