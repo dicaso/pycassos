@@ -11,10 +11,11 @@ Requirements:
 - node >= 5
 - angular cli
   
-Pip packages:
+Prepare virtualenv:
 
-    pip install pycassos[development]
-
+    PYCASSOSDIR=~/repos/pycassos #set to dir where pycassos was cloned
+    mkvirtualenv -a $PYCASSOSDIR -i twine -i Sphinx \
+                 -r $PYCASSOSDIR/requirements.txt dicaso
 
 Style guide
 -----------

@@ -1,3 +1,6 @@
+# pycassos ignore dirs
+pycassos/static/
+pycassong/node_modules/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
