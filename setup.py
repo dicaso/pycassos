@@ -22,8 +22,10 @@ setup(name = package,
           'ipython',
           # server packages
           'flask',
+          'flask-login',
           'flask-jsonpify',
-          'flask-sqlalchemy',
+          'flask-mongoengine',
+          #'flask-sqlalchemy',
           'flask-restful',
           'mpld3'
       ],

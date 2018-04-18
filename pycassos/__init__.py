@@ -6,11 +6,21 @@ Initializes flask app, brings all routes together.
 
 from flask import Flask, request
 from flask_restful import Resource, Api
+from pycassos import users
 import json
 
 # serving static files from root to directly serve ng frontend
 app = Flask('pycassos',static_url_path='')
 api = Api(app)
+
+# Database & users
+app.config['MONGODB_SETTINGS'] = {
+    'db': 'pycassos',
+    #'host': '127.0.0.1',
+    #'port': 27017
+}
+users.db.init_app(app)
+users.login_manager.init_app(app)
 
 # Frontend
 #@app.route('/', defaults={'path': ''})
