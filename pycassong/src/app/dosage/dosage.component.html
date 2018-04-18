@@ -1,2 +1,2 @@
 <h2>Dosage sensitivity {{ gene }}</h2>
-<iframe [src]="originlocation + '/dosage/' + gene"></iframe>
+<iframe [src]="sanitize(ploturl)" width="100%" height="600"></iframe>

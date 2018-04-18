@@ -10,6 +10,7 @@ import 'rxjs/add/operator/switchMap';
 })
 export class DosageComponent implements OnInit {
     gene: string;
+    ploturl: string;
     originlocation: string;
     
     constructor(
@@ -25,9 +26,12 @@ export class DosageComponent implements OnInit {
 	//this.gene$ = this.route.paramMap
 	//    .switchMap((params: ParamMap) => params.get('gene'))
 	this.gene = this.route.snapshot.paramMap.get('gene');
-	this.sanitizer.bypassSecurityTrustResourceUrl(
-	    this.originlocation + '/dosage/' + this.gene
-	);
+	this.ploturl = this.originlocation + '/rest/dosage/' + this.gene;
+    }
+
+    sanitize(url:string) {
+	return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+	//or with bypassSecurityTrustUrl
     }
 
 }

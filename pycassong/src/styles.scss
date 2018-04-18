@@ -18,22 +18,27 @@ $brand-danger:          #fbcc74;
 $header-height:          70px;
 $footer-height:          70px;
 
-html {
+html, body {
+    height: 100%;
+    //width: 100%;
+}
+
+body {
+    //display: flex;
+}
+
+div {
+    //flex: 1;
+}
+
+/*html {
     position: relative; 
     min-height: 100%;
-}
-
-.carousel {
-    height: 400px;
-    text-align: center;
-    outline: none;
-    
-    img {
-	margin: auto;
-    }
-}
+}*/
 
 .router-content {
+    min-height: 100%;
+    //width: 100%;
     margin-top: $header-height;
     margin-bottom: $footer-height;
     padding-top: 1rem;
@@ -59,4 +64,14 @@ html {
     right: 0px;
     position: absolute;
     height: $footer-height;
+}
+
+.carousel {
+    height: 400px;
+    text-align: center;
+    outline: none;
+    
+    img {
+	margin: auto;
+    }
 }
