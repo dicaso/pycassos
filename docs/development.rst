@@ -35,11 +35,11 @@ Original project setup
     # angular frontend tree
     # => dir for development, dir for build end that will be flask served
     ng new pycassong --style=scss --routing --skip-git
-    mkdir -p pycassos/static/song && cd pycassong
+    mkdir -p pycassos/static && cd pycassong
     git add README.md e2e karma.conf.js package-lock.json package.json \
       protractor.conf.js src tsconfig.json tslint.json .gitignore \
       .angular-cli.json .editorconfig
-    sed -i '' 's+dist+../pycassos/static/song+' .angular-cli.json
+    sed -i '' 's+dist+../pycassos/static+' .angular-cli.json
     ## style
     npm install --save normalize.css bootstrap@4.0.0-alpha.6 font-awesome tether
     npm install --save @ng-bootstrap/ng-bootstrap
@@ -49,7 +49,7 @@ Original project setup
       git add src/app/$comp
     done
     ## build
-    ng build --prod --build-optimizer --base-href=/static/song/
+    ng build --prod --build-optimizer --base-href=/
 
 
 References

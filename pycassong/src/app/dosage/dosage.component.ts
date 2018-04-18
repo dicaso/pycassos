@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import { DOCUMENT, DomSanitizer } from '@angular/platform-browser';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import 'rxjs/add/operator/switchMap';
 
 @Component({
   selector: 'app-dosage',
@@ -7,10 +10,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DosageComponent implements OnInit {
     gene: string;
+    originlocation: string;
     
-    constructor() { }
+    constructor(
+	@Inject(DOCUMENT) document: any,
+	private sanitizer: DomSanitizer,
+	private route: ActivatedRoute,
+	private router: Router
+    ) {
+	this.originlocation = document.location.origin;
+    }
 
     ngOnInit() {
+	//this.gene$ = this.route.paramMap
+	//    .switchMap((params: ParamMap) => params.get('gene'))
+	this.gene = this.route.snapshot.paramMap.get('gene');
+	this.sanitizer.bypassSecurityTrustResourceUrl(
+	    this.originlocation + '/dosage/' + this.gene
+	);
     }
 
 }

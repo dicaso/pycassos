@@ -12,7 +12,7 @@ export class NavComponent implements OnInit {
     constructor() {
 	this.navpages = [
 	    ['Home','home'],
-	    ['Dosage sensitivity','dosage']
+	    ['Dosage sensitivity','/dosage/BRIP1']
 	];
 
     }

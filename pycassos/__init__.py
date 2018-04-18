@@ -8,14 +8,21 @@ from flask import Flask, request
 from flask_restful import Resource, Api
 import json
 
-app = Flask('pycassos')
+# serving static files from root to directly serve ng frontend
+app = Flask('pycassos',static_url_path='')
 api = Api(app)
 
 # Frontend
+#@app.route('/', defaults={'path': ''})
+#@app.route('/static/<path:path>')
 @app.route('/')
-@app.route('/static/song/')
-def root():
-    return app.send_static_file('song/index.html')
+@app.errorhandler(404)
+def root(path):
+    return app.send_static_file('index.html')
+
+#@app.errorhandler(404)
+#def page_not_found(e):
+#    return render_template('404.html'), 404
 
 # Backend
 # TODO move to visualization module
