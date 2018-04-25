@@ -16,7 +16,7 @@ setup(name = package,
           # dicaso packages
           'leopard',
           'genairics',
-          'bidali',
+          'bidali[retro]',
           'pyni',
           # console packages
           'ipython',
