@@ -11,6 +11,11 @@ developed by Digital Caviar Solutions.
 - pyni: network inference package
 - leopard: lab reporting package
 
+## Build and run pycassos with Docker
+
+    docker build -t pycassos https://github.com/dicaso/pycassos.git
+    docker run -it pycassos
+
 ## Acknowledgments
 
 ### Open source projects
